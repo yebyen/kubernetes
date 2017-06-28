@@ -8,3 +8,7 @@ spec:
   resources:
     requests:
       storage: 1Mi
+  selector:
+    matchLabels:
+      id: my-nfs-volume
+  storageClassName: nfs
